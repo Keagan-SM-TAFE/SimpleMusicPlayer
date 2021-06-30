@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleMusicPlayer</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleMusicPlayer.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:SimpleMusicPlayer.MainWindow">
+            Author:             Keagan Young
+            Date:               16 - 06 - 2021
+            Project Name:       Music Player Project Assesment.WPF application.
+            Version:            1.6
+            Description:        This project was created as part of a Diploma in Software Development.
+                                The requirements of this task are:
+                                     - Must contain dynamic data structures
+                                     - Must contain hashing techniques
+                                     - Must contain sorting algorithm
+                                     - Must contain searching technique
+                                     - Must contain 3rd party library
+                                     - Must have a GUI
+                                     - Must adhere to coding standards
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.#ctor">
+            <summary>
+            Initialize main window
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.Window_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Drag window event
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.Btn_exit_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Window exit button 
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.Btn_maximize_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Window maximize button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.Btn_minimize_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Window minimize button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnSeach_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Search song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnReset_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Reset song searched
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.SelectFileButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Add a new song button 
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.Timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Count current time of the song
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.PlayOnceAsyncButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Play song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.StopButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Stop song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnNext_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Next song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnPre_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Previous song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnFirst_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Play first song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BtnLast_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Play last song button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.MenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Click song in list
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.PlaySong">
+            <summary>
+            Play a song function
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.StopSong">
+            <summary>
+            Stop song function
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.LoadSong(System.String)">
+            <summary>
+            Load song function
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.SortList">
+            <summary>
+            Sort song List finction
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.MergeSort(System.Collections.Generic.LinkedListNode{System.String},System.Collections.Generic.LinkedListNode{System.String})">
+            <summary>
+            Merge sort function
+            </summary>
+            <param name="Head"></param>
+            <param name="Tail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.MidNode(System.Collections.Generic.LinkedListNode{System.String},System.Collections.Generic.LinkedListNode{System.String})">
+            <summary>
+            Mid Node function
+            </summary>
+            <param name="Head"></param>
+            <param name="Tail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.MergeTwoSortedList(System.Collections.Generic.LinkedListNode{System.String},System.Collections.Generic.LinkedListNode{System.String})">
+            <summary>
+            Merge two sorted list function
+            </summary>
+            <param name="firstList"></param>
+            <param name="secondList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.BinarySearch(System.Collections.Generic.LinkedListNode{System.String},System.Collections.Generic.LinkedListNode{System.String})">
+            <summary>
+            Binary search function
+            </summary>
+            <param name="Low"></param>
+            <param name="High"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SimpleMusicPlayer.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:SimpleMusicPlayer.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:SimpleMusicPlayer.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:SimpleMusicPlayer.SongsList">
+            Author:             Keagan Young
+            Date:               16 - 06 - 2021
+            Project Name:       Music Player Project Assesment.WPF application.
+            Version:            1.6
+            Description:        This project was created as part of a Diploma in Software Development.
+                                The requirements of this task are:
+                                     - Must contain dynamic data structures
+                                     - Must contain hashing techniques
+                                     - Must contain sorting algorithm
+                                     - Must contain searching technique
+                                     - Must contain 3rd party library
+                                     - Must have a GUI
+                                     - Must adhere to coding standards
+            <summary>
+            SongsList
+            </summary>
+        </member>
+        <member name="P:SimpleMusicPlayer.SongsList.SongName">
+            <summary>
+            SongName
+            </summary>
+        </member>
+        <member name="P:SimpleMusicPlayer.SongsList.SongPath">
+            <summary>
+            SongPath
+            </summary>
+        </member>
+        <member name="P:SimpleMusicPlayer.SongsList.Backcolor">
+            <summary>
+            Backcolor
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.SongsList.#ctor(System.String,System.String,System.String)">
+            <summary>
+            SongsList
+            </summary>
+            <param name="songName"></param>
+            <param name="songPath"></param>
+            <param name="backColour"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.SongsList.RaisePropertyChanged(System.String)">
+            <summary>
+            RaisePropertyChanged
+            </summary>
+            <param name="propName"></param>
+        </member>
+        <member name="T:SimpleMusicPlayer.WindowLogin">
+            Author:             Keagan Young
+            Date:               16 - 06 - 2021
+            Project Name:       Music Player Project Assesment.WPF application.
+            Version:            1.6
+            Description:        This project was created as part of a Diploma in Software Development.
+                                The requirements of this task are:
+                                     - Must contain dynamic data structures
+                                     - Must contain hashing techniques
+                                     - Must contain sorting algorithm
+                                     - Must contain searching technique
+                                     - Must contain 3rd party library
+                                     - Must have a GUI
+                                     - Must adhere to coding standards
+            <summary>
+            Interaction logic for WindowLogin.xaml
+            </summary>
+            <summary>
+            WindowLogin
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.#ctor">
+            <summary>
+            Initialize window login
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.Window_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Drag Window event
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.Btn_exit_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Window exit button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Open register window button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.BtnLogin_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Login button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.ComputeSha256Hash(System.String)">
+            <summary>
+            Function to hash the password using Sha256 encryption
+            </summary>
+            <param name="rawData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowLogin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SimpleMusicPlayer.WindowRegister">
+            Author:             Keagan Young
+            Date:               16 - 06 - 2021
+            Project Name:       Music Player Project Assesment.WPF application.
+            Version:            1.6
+            Description:        This project was created as part of a Diploma in Software Development.
+                                The requirements of this task are:
+                                     - Must contain dynamic data structures
+                                     - Must contain hashing techniques
+                                     - Must contain sorting algorithm
+                                     - Must contain searching technique
+                                     - Must contain 3rd party library
+                                     - Must have a GUI
+                                     - Must adhere to coding standards
+            <summary>
+            Interaction logic for WindowRegister.xaml
+            </summary>
+            <summary>
+            WindowRegister
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.#ctor">
+            <summary>
+             Initialize window register
+            </summary>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.Window_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Drag window event
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.Btn_exit_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Window exit button 
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Open login window button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.BtnRegister_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Register button
+            </summary>
+            <param name="sender"></param>
+            <param name="event"></param>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.ComputeSha256Hash(System.String)">
+            <summary>
+            Function to hash password using Sha256 encryption
+            </summary>
+            <param name="rawData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleMusicPlayer.WindowRegister.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
